@@ -21,7 +21,7 @@ const BillForm = () => {
 
   const fetchBills = async () => {
     try {
-      const response = await axios.get('https://svpd2024.onrender.com/1/api/bills'); // Fetch all bills
+      const response = await axios.get('https://svpd2024.onrender.com/api/bills'); // Fetch all bills
       setBills(response.data);
     } catch (err) {
       console.error('Error fetching bills:', err);
